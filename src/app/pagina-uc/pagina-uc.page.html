@@ -1,11 +1,55 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Página UC</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>IFSC - SIGAA</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-button expand="block" routerLink="/pagina-login">Ir para Página de Login</ion-button>
-  <ion-button expand="block" routerLink="/pagina-principal">Ir para Página Principal</ion-button>
-  <ion-button expand="block" routerLink="/pagina-uc">Atualizar Página UC</ion-button>
+
+<ion-content>
+  <nav>
+    <ion-button expand="block" routerLink="/pagina-login">Menu</ion-button>
+    <div class="profile">
+      <div class="image">
+        <img src="assets/imgs/ifsc.png" alt="img" />
+      </div>
+      <div class="info">
+        <p id="nome">Fulano da Silva Martins</p>
+        <p id="campus">Campus Garopaba-SC</p>
+      </div>
+    </div>
+    <ion-button expand="block" routerLink="/pagina-login">home</ion-button>
+  </nav>
+  <div class="uc">
+    <p>PDM202205 - Programação para dispositivos móveis</p>
+  </div>
+  <main>
+    <section>
+      <h4>Introdução a programação mobile</h4>
+      <p>(03/04/2025 - 03/04/2025)</p>
+      <hr />
+      <p>Tópicos da aula abaixo:</p>
+
+      <p class="linkson">icon -  Slides aula 1</p>
+    </section>
+    <section>
+      <h4>Prototipação de aplicativos</h4>
+      <p>(03/04/2025 - 03/04/2025)</p>
+      <hr />
+
+      <p class="linkson">icon -  Slides aula 2</p>
+      <p class="linkson">icon -  Atividade 1 - tela aplicativo</p>
+
+    </section>
+    <section>
+      <h4>Typescript</h4>
+      <p>(03/04/2025 - 03/04/2025)</p>
+      <hr />
+    </section>
+    <section class="cancelled">
+      <h4>Aula Cancelada</h4>
+      <p>(03/04/2025 - 03/04/2025)</p>
+      <hr />
+      <p>Cancelada devido as chuvas.</p>
+    </section>
+  </main>
 </ion-content>
