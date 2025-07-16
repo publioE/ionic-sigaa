@@ -1,11 +1,41 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Página de Login</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>IFSC - SIGAA</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-button expand="block" routerLink="/pagina-principal">Ir para Página Principal</ion-button>
-  <ion-button expand="block" routerLink="/pagina-uc">Ir para Página UC</ion-button>
-  <ion-button expand="block" routerLink="/pagina-login">Atualizar Página de Login</ion-button>
+<ion-content fullscreen>
+  <div class="login-container">
+    <p class="alert-text">
+      <strong class="alert-title">ATENÇÃO!</strong><br />
+      O sistema diferencia letras maiúsculas de minúsculas na senha.
+    </p>
+
+    <h2>Entrar no Sistema</h2>
+    
+    <ion-item>
+      <ion-input type="text" placeholder="Usuário"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+    <div class="login-links">
+      <p>Esqueceu o login? <a href="#">Clique aqui</a></p>
+      <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+    </div>
+
+    <ion-button expand="block" [routerLink]="['/pagina-principal']">Entrar</ion-button>
+
+    <p class="register-text">
+      Se não possuir login<br/>
+      <a href="#"><strong>Cadastre-se aqui!</strong></a>
+    </p>
+
+    <p class="footer-text">
+      Para outros tipos de login:<br />
+      <a href="#"><strong>Clique aqui!</strong></a>
+    </p>
+  </div>
 </ion-content>

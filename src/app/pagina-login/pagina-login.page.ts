@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonItem } from '@ionic/angular/standalone';
+import { IonInput } from "../../../node_modules/@ionic/angular/standalone/directives/input";
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-pagina-login',
@@ -13,12 +15,8 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/a
     CommonModule,
     FormsModule,
     RouterModule,
-    IonContent,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
-    IonButton
-  ]
+    IonicModule
+]
 })
 export class PaginaLoginPage implements OnInit {
 
