@@ -1,11 +1,121 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Página Principal</ion-title>
+    <ion-title>IFSC - SIGAA</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <ion-button expand="block" routerLink="/pagina-login">Ir para Página de Login</ion-button>
-  <ion-button expand="block" routerLink="/pagina-principal">Atualizar Página Principal</ion-button>
-  <ion-button expand="block" routerLink="/pagina-uc">Ir para Página UC</ion-button>
+<ion-content class="pagina-principal">
+  <nav>
+    <div class="profile">
+      <ion-avatar>
+        <img src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <div class="info">
+        <p id="nome">Fulano da Silva Martins</p>
+        <p id="campus">Campus Garopaba-SC</p>
+      </div>
+    </div>
+    <ion-button expand="block" routerLink="/pagina-login"><i class="fas fa-home"></i></ion-button>
+  </nav>
+
+  <ion-card class="noticias">
+    <ion-card-header>
+      <ion-card-title>Últimas notícias</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Notícia de exemplo, servidores e alunos fazem votação para cantina oferecer suco de goiaba
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Componente Curricular</th>
+          <th>Local</th>
+          <th>Horário</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td [routerLink]="['/pagina-uc']">PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS I</td>
+          <td>Sala</td>
+          <td>5N234</td>
+        </tr>
+        <tr>
+          <td [routerLink]="['/pagina-uc']">CIÊNCIA DE DADOS I</td>
+          <td>Garopaba-SC</td>
+          <td>*</td>
+        </tr>
+        <tr>
+          <td [routerLink]="['/pagina-uc']">EMPREENDEDORISMO E INOVAÇÃO</td>
+          <td>Sala</td>
+          <td>2N234</td>
+        </tr>
+        <tr>
+          <td [routerLink]="['/pagina-uc']">GERENCIAMENTO DE SERVIÇOS PARA INTERNET</td>
+          <td>Sala</td>
+          <td>3N234</td>
+        </tr>
+        <tr>
+          <td [routerLink]="['/pagina-uc']">FÍSICA IX</td>
+          <td>Sala</td>
+          <td>4N234</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <h2>Atividades</h2>
+    <table>
+      <thead>
+        <tr class="header-table">
+          <th>Data</th>
+          <th>UC</th>
+          <th>Tarefa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="dias-restantes-red">10/06/2025 23:59<br>(3 dias restantes)</span></td>
+          <td>PDM</td>
+          <td>Atividade Ionic</td>
+        </tr>
+        <tr>
+          <td><span class="dias-restantes-yellow">12/06/2025 23:59<br>(5 dias restantes)</span></td>
+          <td>GSI</td>
+          <td>Prova VirtualBox</td>
+        </tr>
+        <tr>
+          <td><span class="dias-restantes-yellow">17/06/2025 23:59<br>(7 dias restantes)</span></td>
+          <td>FSI IX</td>
+          <td>Calcular a massa do universo</td>
+        </tr>
+        <tr>
+          <td><span class="dias-restantes-green">25/06/2025 23:59<br>(15 dias restantes)</span></td>
+          <td>EMP</td>
+          <td>Startup milionária</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ion-card class="foruns">
+    <ion-card-content>
+      <p>
+        Caro Aluno, este fórum é destinado para discussões relacionadas ao seu curso. Todos os alunos do curso e a coordenação tem acesso a ele.
+      </p>
+      <p><strong>Nenhum tópico cadastrado</strong></p>
+      <div class="links">
+        <a href="#">Cadastrar tópico</a> | <a href="#">Visualizar tópicos</a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <footer class="rodape">
+    SIGAA | DTIC - (48) 3877-9000 ©
+  </footer>
 </ion-content>
