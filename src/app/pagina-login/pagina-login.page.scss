@@ -21,18 +21,21 @@ ion-content {
   max-width: 300px;
 }
 
-ion-title {
-  color: #ffffff;
-  font-weight: bold;
-  background-color: #374EA2;
-  font-size: 1.5rem;
-  text-align: left;
-  padding-left: 5px;
-}
-
 .alert-title {
   font-weight: bold;
   color: #ff0000;
+}
+
+ion-toolbar {
+  --color: #fff;
+  --background: #3A4570;
+  border-bottom: 4px #C99451 inset;
+
+  ion-title{
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+  }
 }
 
 h2 {
